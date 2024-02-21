@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: avalon-wtf
+spec:
+  selector:
+    matchLabels:
+      run: avalon-wtf
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: avalon-wtf
+    spec:
+      containers:
+      - name: avalon-wtf
+        image: avalon-wtf:latest
+        ports:
+        - containerPort: 80
+        
