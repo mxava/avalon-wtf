@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+THIS PLACE IS A MESSAGE...
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AND PART OF A SYSTEM OF MESSAGES...
 
-Currently, two official plugins are available:
+PAY ATTENTION TO IT!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+SENDING THIS MESSAGE WAS IMPORTANT TO US.
 
-## Expanding the ESLint configuration
+WE CONSIDERED OURSELVES TO BE A POWERFUL CULTURE.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+THIS PLACE IS NOT A PLACE OF HONOR...
 
-- Configure the top-level `parserOptions` property like this:
+NO HIGHLY ESTEEMED DEED IS COMMEMORATED HERE...
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+NOTHING VALUED IS HERE.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+WHAT IS HERE IS DANGEROUS AND REPULSIVE TO US.
+
+THIS MESSAGE IS A WARNING ABOUT DANGER.
+
+THE DANGER IS IN A PARTICULAR LOCATION...
+
+IT INCREASES TOWARD A CENTER...
+
+THE CENTER OF THE DANGER IS HERE...
+
+OF A PARTICULAR SIZE AND SHAPE, AND BELOW US.
+
+THE DANGER IS STILL PRESENT, IN YOUR TIME, AS IT WAS IN OURS.
+
+THE DANGER IS TO THE BODY, AND IT CAN KILL.
+
+THE FORM OF THE DANGER IS AN EMANATION OF ENERGY.
+
+THE DANGER IS UNLEASHED ONLY IF YOU SUBSTANTIALLY DISTURB THIS PLACE PHYSICALLY.
+
+THIS PLACE IS BEST LEFT SHUNNED AND UNINHABITED.
