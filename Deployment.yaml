@@ -5,16 +5,16 @@ metadata:
 spec:
   selector:
     matchLabels:
-      run: avalon-wtf
+      app: avalon-wtf
   replicas: 1
   template:
     metadata:
       labels:
-        run: avalon-wtf
+        app: avalon-wtf
     spec:
       containers:
       - name: avalon-wtf
-        image: avalon-wtf:latest
+        image: ${AWS_ACCOUNT_ID}.dkr.ecr.us-west-2.amazonaws.com/avalon-wtf:latest
         ports:
         - containerPort: 80
         
