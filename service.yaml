@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: avalon-wtf-svc
+  namespace: avalon-wtf
+  labels:
+    app: avalon-wtf
+spec:
+  selector:
+    app: avalon-wtf
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: avalon-wtf
+  namespace: avalon-wtf
+  labels:
+    apps: avalon-wtf
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: avalon-wtf
+  template:
+    metadata:
+      labels:
+        app: avalon-wtf
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.io/arch
+                operator: In
+                values:
+                - amd64    
+      containers:
+      - name: avalon-wtf
+        image: 636154505349.dkr.ecr.us-west-2.amazonaws.com/avalon-wtf:latest
+        ports:
+        - name: http
+          containerPort: 80
+          imagePullPolicy: IfNotPresent
+        nodeSelector:
+        kubernetes.io/os: linux
