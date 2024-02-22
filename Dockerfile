@@ -17,8 +17,5 @@ FROM nginx:alpine
 # Copy built react app to the web server directory
 COPY --from=build /app/dist /usr/share/nginx/html
 
-# Expose port 80 for Nginx
-EXPOSE 80
-
 # Start Nginx at runtime
 CMD ["nginx", "-g", "daemon off;"]
