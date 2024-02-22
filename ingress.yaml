@@ -1,0 +1,33 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: avalon-wtf-ingress
+  namespace: avalon-wtf
+spec:
+  defaultBackend:
+    service:
+      name: avalon-wtf-svc
+      port:
+        number: 80
+  ingressClassName: nginx
+  rules:
+    - host: www.avalon.wtf
+      http:
+        paths:
+          - path: "/"
+            pathType: Prefix
+            backend:
+              service:
+                name: avalon-wtf-svc
+                port:
+                  number: 80
+    - host: a0bee9dbd38ca41b480c4f6a9ba8e53a-ecce4469a95242d6.elb.us-west-2.amazonaws.com
+      http:
+        paths:
+          - path: "/"
+            pathType: Prefix
+            backend:
+              service:
+                name: avalon-wtf-svc
+                port:
+                  number: 80
